@@ -1,0 +1,16 @@
+{
+  "name": "start-template-talwindCSS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/tailwind.css -o assets/css/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^1.7.6"
+  }
+}
