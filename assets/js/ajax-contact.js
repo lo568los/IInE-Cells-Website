@@ -19,7 +19,11 @@ $(function() {
 			type: 'POST',
 			url: $(form).attr('action'),
 			data: formData
-		})
+			success: function(data)
+        		{
+          			alert(data); // show response from the php script.
+       			 }
+			})
 		.done(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
 			$(formMessages).removeClass('error');
