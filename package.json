@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "tailwind": "^4.0.0",
-    "tailwindcss": "^1.7.6"
+    "tailwindcss": "^1.9.6"
   }
 }

@@ -1,0 +1,159 @@
+ <!--====== CALL TO ACTION PART START ======-->
+
+    <section
+      id="call-to-action"
+      class="relative overflow-hidden bg-blue-600 call-to-action"
+    >
+      <div class="absolute top-0 left-0 w-1/2 h-full call-action-image">
+        <img src="assets/images/call-to-action.png" alt="call-to-action" />
+      </div>
+
+      <div class="container-fluid">
+        <div class="justify-end row">
+          <div class="w-full lg:w-1/2">
+            <div class="py-32 mx-auto text-center call-action-content">
+              <h2 class="mb-5 text-5xl font-semibold leading-tight text-white">
+                Curious to Learn More? Stay Tuned
+              </h2>
+              <p class="mb-6 text-white">
+                You let us know whenever you want us to update anything or think
+                something needs to be added.
+              </p>
+              <form
+                action="#"
+                class="relative w-5/6 mx-auto md:w-2/3 call-newsletter"
+              >
+                <i
+                  class="absolute top-0 left-0 pt-3 pl-5 text-xl text-blue-600 lni-envelope"
+                ></i>
+                <input
+                  type="email"
+                  placeholder="iinecells@gmail.com"
+                  class="w-full py-3 pl-12 pr-40 bg-white rounded-full focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  class="absolute top-0 right-0 px-6 py-2 mt-1 mr-1 font-bold text-white duration-300 bg-blue-600 rounded-full hover:bg-blue-500"
+                >
+                  SUBSCRIBE
+                </button>
+              </form>
+            </div>
+            <!-- slider-content -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== CALL TO ACTION PART ENDS ======-->
+
+    <!--====== TESTIMONIAL THREE PART START ======-->
+
+    <section id="testimonial" class="testimonial-area py-120">
+      <div class="container">
+        <div class="justify-center row">
+          <div class="w-full mx-4 lg:w-1/2">
+            <div class="pb-10 text-center section-title">
+              <h4 class="title">Testimonial</h4>
+              <p class="text">Extraordinary service for extraordinary users.</p>
+            </div>
+            <!-- section title -->
+          </div>
+        </div>
+        <!-- row -->
+
+        <div class="row">
+          <div class="w-full">
+            <div class="row testimonial-active">
+              <div class="w-full lg:w-1/3">
+                <div class="text-center single-testimonial">
+                  <div class="testimonial-image">
+                    <img src="assets/images/author-3.jpg" alt="Author" />
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="pb-5 mb-6 border-b border-gray-300">
+                      Stop wasting time and money designing and managing a
+                      website that doesn’t get results. Happiness guaranteed!
+                      Stop wasting time and money designing and managing a
+                      website that doesn’t get results. Happiness guaranteed!
+                    </p>
+                    <h6 class="text-lg font-semibold text-gray-900">
+                      Isabela Moreira
+                    </h6>
+                    <span class="text-sm text-gray-700">CEO, GrayGrids</span>
+                  </div>
+                </div>
+                <!-- single testimonial -->
+              </div>
+              <div class="w-full lg:w-1/3">
+                <div class="text-center single-testimonial">
+                  <div class="testimonial-image">
+                    <img src="assets/images/author-1.jpg" alt="Author" />
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="pb-5 mb-6 border-b border-gray-300">
+                      Stop wasting time and money designing and managing a
+                      website that doesn’t get results. Happiness guaranteed!
+                      Stop wasting time and money designing and managing a
+                      website that doesn’t get results. Happiness guaranteed!
+                    </p>
+                    <h6 class="text-lg font-semibold text-gray-900">Fiona</h6>
+                    <span class="text-sm text-gray-700"
+                      >Lead Designer, UIdeck</span
+                    >
+                  </div>
+                </div>
+                <!-- single testimonial -->
+              </div>
+              <div class="w-full lg:w-1/3">
+                <div class="text-center single-testimonial">
+                  <div class="testimonial-image">
+                    <img src="assets/images/author-2.jpg" alt="Author" />
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="pb-5 mb-6 border-b border-gray-300">
+                      Stop wasting time and money designing and managing a
+                      website that doesn’t get results. Happiness guaranteed!
+                      Stop wasting time and money designing and managing a
+                      website that doesn’t get results. Happiness guaranteed!
+                    </p>
+                    <h6 class="text-lg font-semibold text-gray-900">
+                      Elon Musk
+                    </h6>
+                    <span class="text-sm text-gray-700">CEO, SpaceX</span>
+                  </div>
+                </div>
+                <!-- single testimonial -->
+              </div>
+              <div class="w-full lg:w-1/3">
+                <div class="text-center single-testimonial">
+                  <div class="testimonial-image">
+                    <img src="assets/images/author-4.jpg" alt="Author" />
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="pb-5 mb-6 border-b border-gray-300">
+                      Stop wasting time and money designing and managing a
+                      website that doesn’t get results. Happiness guaranteed!
+                      Stop wasting time and money designing and managing a
+                      website that doesn’t get results. Happiness guaranteed!
+                    </p>
+                    <h6 class="text-lg font-semibold text-gray-900">
+                      Fajar Siddiq
+                    </h6>
+                    <span class="text-sm text-gray-700">CEO, MakerFlix</span>
+                  </div>
+                </div>
+                <!-- single testimonial -->
+              </div>
+            </div>
+            <!-- row -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== TESTIMONIAL THREE PART ENDS ======-->
