@@ -31,6 +31,58 @@
 
     <!--====== tailwind css ======-->
     <link rel="stylesheet" href="assets/css/tailwind.css" />
+    
+    <!--====== slider css ======-->
+    <style>
+    .slide {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      height: 100vh;
+      overflow-x: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .slide1 {
+    	background-image: url(
+      "https://media.geeksforgeeks.org/wp-content/uploads/20210812221217/pic1.png");
+    }
+    .slide2 {
+      background-image: url(
+      "https://media.geeksforgeeks.org/wp-content/uploads/20210812221254/pic2.png");
+    }
+    .slide3 {
+      background-image: url(
+      "https://media.geeksforgeeks.org/wp-content/uploads/20210812221322/pic3.png");
+    }
+    .arrow {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      margin-top: -35px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+    #arrow-left {
+      border-width: 20px 30px 20px 0;
+      border-color: transparent #fff transparent transparent;
+      left: 0;
+      margin-left: 20px;
+    }
+    
+    #arrow-right {
+      border-width: 20px 0 20px 30px;
+      border-color: transparent transparent transparent #fff;
+      right: 0;
+      margin-right: 20px;
+    }
+    
+</style>
+
   </head>
 
   <body>
@@ -110,12 +162,12 @@
         <div class="justify-center row">
           <div class="w-full">
             <div class="pt-48 pb-64 text-center header-content">
-              <h3
+              <h3 name = "title"
                 class="mb-5 text-3xl font-semibold leading-tight text-gray-900 md:text-5xl"
               >
                 Transcutaneous Tracheal Electrode (TTE)
               </h3>
-              <p class="px-5 mb-10 text-xl text-gray-700">
+              <p class="px-5 mb-10 text-xl text-gray-700" name="One line Summary">
                 A novel, non-invasive, and cost-effective method for
                 preventing respiratory morbidity in the ICU.
               </p>
@@ -139,8 +191,16 @@
 
   <div class="container mx-auto my-12 px-auto">
     <div class = "m-12" style="margin-top: 3rem; margin-bottom: 3rem;">
-        <h3 class = "Italic text-2xl font-serif">"Dysphagia post-tracheostomy constitutes a significant concern in India, impacting up to 70% of patients and leading to a mortality rate of up to 11%. This implies that one out of every ten individuals may succumb to choking or experience grave respiratory distress following the procedure. This issue is particularly accentuated in government-run facilities, especially in rural areas, where the morbidity and mortality rates are anticipated to be more pronounced."</h1><br><br>
-
+        <h3 class = "Italic text-2xl font-serif" name="problem statement">"Dysphagia post-tracheostomy constitutes a significant concern in India, 
+          impacting up to 70% of patients and leading to a mortality rate of up to 11%. This implies that one out of every ten individuals 
+          may succumb to choking or experience grave respiratory distress following the procedure. This issue is particularly accentuated 
+          in government-run facilities, especially in rural areas, where the morbidity and mortality rates are anticipated to be more pronounced."</h3><br><br>
+      
+        <div id="arrow-left" class="arrow"></div>
+    <div class="slide" name="slide1"></div>
+    <div class="slide" name="slide2"></div>
+    <div class="slide" name="slide3"></div>
+    <div id="arrow-right" class="arrow"></div>
         <p class="text-2xl ">
             Our solution entails the integration of a nerve activity measuring electrode into the tracheostomy apparatus, enabling the measurement of the input from the cranial nerves involved in the process of swallowing. 
             This non-invasive technique permits surface-level measurement, and the resulting signals are transmitted through an amplification and transmission circuit to a signal classification algorithm, which effectively detects distress signals associated with dysphagia. 
@@ -327,5 +387,61 @@
 
   <!--====== Main js ======-->
   <script src="assets/js/main.js"></script>
+
+  <!--====== slider js ======-->
+<script>
+    let sliderImages = document.querySelectorAll(".slide"),
+    arrowLeft = document.querySelector("#arrow-left"),
+    arrowRight = document.querySelector("#arrow-right"),
+    current = 0;
+    
+    // Clear all images
+    function reset() {
+    for (let i = 0; i < sliderImages.length; i++) {
+    	sliderImages[i].style.display = "none";
+        }
+    }
+    
+    // Initial slide
+    function startSlide() {
+    reset();
+    sliderImages[0].style.display = "block";
+    }
+    
+    // Show previous
+    function slideLeft() {
+    reset();
+    sliderImages[current - 1].style.display = "block";
+    current--;
+    }
+    
+    // Show next
+    function slideRight() {
+    reset();
+    sliderImages[current + 1].style.display = "block";
+    current++;
+    }
+    
+    // Left arrow click
+    arrowLeft.addEventListener("click", function () {
+    if (current === 0) {
+    	current = sliderImages.length;
+    }
+    slideLeft();
+    });
+    
+    // Right arrow click
+    arrowRight.addEventListener("click", function () {
+    if (current === sliderImages.length - 1) {
+    	current = -1;
+    }
+    slideRight();
+    });
+    
+    startSlide();
+</script>
+
+<!--=========== JS ends ============-->
+
 </body>
 </html>
