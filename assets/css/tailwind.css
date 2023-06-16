@@ -620,6 +620,10 @@ video {
   }
 }
 
+.bg-clip-padding{
+  background-clip: padding-box;
+}
+
 .bg-white{
   --bg-opacity: 1;
   background-color: #fff;
@@ -636,6 +640,14 @@ video {
   --bg-opacity: 1;
   background-color: #edf2f7;
   background-color: rgba(237, 242, 247, var(--bg-opacity));
+}
+
+.bg-none{
+  background-image: none;
+}
+
+.border-transparent{
+  border-color: transparent;
 }
 
 .border-gray-200{
@@ -658,16 +670,36 @@ video {
   border-radius: 9999px;
 }
 
+.border-solid{
+  border-style: solid;
+}
+
 .border-none{
   border-style: none;
+}
+
+.border-0{
+  border-width: 0;
 }
 
 .border{
   border-width: 1px;
 }
 
+.box-content{
+  box-sizing: content-box;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .block{
   display: block;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .flex{
@@ -706,6 +738,10 @@ video {
   align-content: flex-start;
 }
 
+.justify-items-center{
+  justify-items: center;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -714,8 +750,12 @@ video {
   justify-content: space-between;
 }
 
-.font-serif{
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+.flex-initial{
+  flex: 0 1 auto;
+}
+
+.float-left{
+  float: left;
 }
 
 .font-medium{
@@ -728,6 +768,14 @@ video {
 
 .font-bold{
   font-weight: 700;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .h-32{
@@ -778,8 +826,16 @@ video {
   line-height: 1.25;
 }
 
+.list-none{
+  list-style-type: none;
+}
+
 .m-4{
   margin: 1rem;
+}
+
+.m-12{
+  margin: 3rem;
 }
 
 .my-0{
@@ -795,6 +851,11 @@ video {
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .mx-auto{
@@ -886,6 +947,10 @@ video {
   max-width: 48rem;
 }
 
+.max-w-6xl{
+  max-width: 72rem;
+}
+
 .max-w-full{
   max-width: 100%;
 }
@@ -895,6 +960,10 @@ video {
      object-fit: cover;
 }
 
+.opacity-50{
+  opacity: 0.5;
+}
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -902,6 +971,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.p-0{
+  padding: 0;
 }
 
 .p-4{
@@ -916,6 +989,11 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .px-5{
@@ -1007,12 +1085,22 @@ video {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
 
 .text-right{
   text-align: right;
+}
+
+.text-white{
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
 }
 
 .text-gray-500{
@@ -1051,12 +1139,40 @@ video {
   color: rgba(90, 103, 216, var(--text-opacity));
 }
 
+.hover\:text-white:hover{
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.focus\:text-white:focus{
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.hover\:no-underline:hover{
+  text-decoration: none;
+}
+
+.focus\:no-underline:focus{
+  text-decoration: none;
+}
+
 .tracking-tight{
   letter-spacing: -0.025em;
 }
 
 .align-middle{
   vertical-align: middle;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .w-40{
@@ -1096,6 +1212,12 @@ video {
        column-gap: 1.5rem;
 }
 
+.gap-x-20{
+  grid-column-gap: 5rem;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
 .gap-y-12{
   grid-row-gap: 3rem;
   row-gap: 3rem;
@@ -1119,6 +1241,22 @@ video {
   --transform-scale-x: 1;
   --transform-scale-y: 1;
   transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+}
+
+.transition-opacity{
+  transition-property: opacity;
+}
+
+.transition-transform{
+  transition-property: transform;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-150{
+  transition-duration: 150ms;
 }
 
 .duration-300{
@@ -1985,4 +2123,3 @@ p {
     grid-column: span 2 / span 2;
   }
 }
-

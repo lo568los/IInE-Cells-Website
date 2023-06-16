@@ -245,4 +245,3 @@ p {
 .back-to-top {
   @apply fixed bottom-0 right-0 z-20 flex items-center justify-center w-10 h-10 mb-8 mr-8 text-white duration-300 bg-blue-600 rounded;
 }
-
