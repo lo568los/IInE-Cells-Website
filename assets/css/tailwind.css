@@ -922,6 +922,9 @@ video {
 .ml-8{
   margin-left: 2rem;
 }
+.ml-new{
+  margin-left: 21rem;
+}
 
 .mt-10{
   margin-top: 2.5rem;
@@ -1006,6 +1009,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-new{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -1018,6 +1026,10 @@ video {
 
 .pl-6{
   padding-left: 1.5rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
 }
 
 .pb-10{
@@ -1177,6 +1189,10 @@ video {
 
 .w-40{
   width: 10rem;
+}
+
+.w-6\/12{
+  width: 50%;
 }
 
 .w-full{
