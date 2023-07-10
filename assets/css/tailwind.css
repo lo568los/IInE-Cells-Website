@@ -922,9 +922,45 @@ video {
 .ml-8{
   margin-left: 2rem;
 }
-.ml-new{
-  margin-left: 21rem;
+
+.ml-shift{
+  margin-left: 5vw;
 }
+.ml-new{
+  margin-left: 20vw;
+}
+@media (max-width: 1024px){
+  .ml-new{
+    margin-left: -10vw;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .proj-text{
+    margin: 0px 0px;
+    padding: 0px 0px;
+  }
+  .ps{
+    text-align: center;
+  }
+  .team{
+    padding: 0rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px){
+.team{
+  padding-left: 100px;
+}
+}
+
+.pt-6{
+  padding-top: 2rem;
+}
+
+
 
 .mt-10{
   margin-top: 2.5rem;
@@ -932,6 +968,10 @@ video {
 
 .mb-10{
   margin-bottom: 2.5rem;
+}
+
+.ml-10{
+  margin-left: 3.5rem;
 }
 
 .mr-auto{
@@ -952,6 +992,10 @@ video {
 
 .max-w-6xl{
   max-width: 72rem;
+}
+
+.max-w-8xl{
+  max-width: 76rem;
 }
 
 .max-w-full{
