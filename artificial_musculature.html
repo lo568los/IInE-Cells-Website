@@ -79,6 +79,7 @@
         padding: 16px;
         margin-top: -22px;
         color: white;
+        background-color: rgba(0,0,0,0.8);
         font-weight: bold;
         font-size: 18px;
         transition: 0.6s ease;
@@ -103,12 +104,12 @@
       
       /* Caption text */
       .text {
-        color: #f2f2f2;
+        color: black;
         font-size: 25px;
         left: -10px;
         padding: 8px 10px;
         position: absolute;
-        bottom: 80px;
+        bottom: 60px;
         width: 100%;
         text-align: center;
       }
@@ -160,6 +161,11 @@
         }
         .slideshow-container{
           margin: 0px 10px;
+        }
+        .text{
+          font-size: 11px;
+          bottom: 20px;
+          left: 1%;
         }
       }
 
@@ -251,7 +257,7 @@
               <h3 name = "title"
                 class="mb-5 text-3xl font-semibold leading-tight text-gray-900 md:text-5xl"
               >
-                Transcutaneous Tracheal Electrode (TTE)
+                Artificial Musculature
               </h3>
               <p class="px-5 mb-10 text-xl text-gray-700" name="One line Summary">
                 A novel, non-invasive, and cost-effective method for
@@ -282,7 +288,9 @@
               <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl ps">Problem Statement</h2>
                <p class="mt-6 text-lg leading-8 text-gray-600">
             </br>
-                <div class = "text-2xl text-left">Up to 93% of patients in the neurology wards can experience choking after tracheostomy, which is fatal in many cases. These issues can interfere with the patient's treatment and leave them disabled, often financially as well.</div>
+                <div class = "text-2xl text-left">The soft robots that are currently around use pneumatic actuators, which are not very life-like as they aren’t able to reproduce complex motions.<br><br>
+
+                  Development of a novel bio-inspired robotic systems. The project is called IC.lyf and we're redesigning robots with a neuromorphic processor and myocyte inspired mechanical atoms, to obtain lifelike movement, tenacity and versatility.</div>
                 </p>
             </div>
         </div>
@@ -298,14 +306,14 @@
 
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
-        <img src="assets\images\IMG_20220807_184921_860.jpg" style="width:100vw;">
-        <div class="text">Caption Text</div>
+        <img src="assets\images\am_img1.jpg" style="width:100vw;"> <!--2520*1000px render-->
+        <div class="text">Fig: A state-of-the-art robotic arm</div>
       </div>
       
       <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
-        <img src="assets\images\IMG_20220807_184942_833.jpg" style="width:100vw;">
-        <div class="text">Caption Two</div>
+        <img src="assets\images\am_img2.jpg" style="width:100vw;">
+        <div class="text"></div>
       </div>
       
       <div class="mySlides fade">
@@ -360,14 +368,21 @@
         <div class="max-w-6xl mr-6">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl ps">Solution</h2>
         <p class="mt-6 text-lg leading-8 text-gray-600"></br>
-            <div class = "text-left text-2xl">The device is designed to alert the nurse station in case an abnormal activity is measured by the electrode placed on the glossopharyngeal nerve, a cranial nerve responsible for swallowing, allowing timely and efficient intervention to stop patients from asphyxiation caused by dysphagia following tracheostomy.<br><br>
+            <div class = "text-left text-2xl">We plan to use Shape Memory Alloys as “muscle fibers.” When thousands of such fibers are put together, we plan to control their joint motion by using algorithms similar to what Pixar employs to model hair in their animation.<br><br>
 
-              The tracheal electrode further targets a completely ignored problem: that of death due to dysphagia. Our solution is non-invasive and inexpensive and works in tandem with the nurses and not as a replacement for them by acting as an alert system.<br><br>
-              
-              This allows us to keep costs low and not impede on the role of the human staff in hospitals, merely helping them be more efficient.</div>
+              This is a completely novel approach to the existing problem.</div>
         </p>
       </div>
-    </div>   
+    </div>  
+    <br><br><Br>
+    <div class="sm:text-center bg-white sm:py-24 pl-6  sm:pl-12">
+      <div class="max-w-6xl mr-6">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl ps">Risks and Requirements</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600"></br>
+          <div class = "text-left text-2xl">Being a completely new approach, the solution needs to be developed from the ground up, needing significant investment of resources and time to achieve success.</div>
+      </p>
+    </div>
+  </div>  
             
     </div>
   </div>
@@ -384,14 +399,14 @@
             <img class="rounded-full" style="height:7rem;width: 7rem;" src="assets/images/dhruv.png" alt="">
             <div>
               <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Dhruv Gupta</h3>
-              <p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
-              <p><a href="javascript:void(0)"
+              <p class="text-sm font-semibold leading-6 text-indigo-600">Team member</p>
+              <p><a href="https://www.linkedin.com/in/dhruv-gupta-2a60b3215/"
                 ><i class="lni-linkedin-original"></i
               ></a></p>
             </div>
           </div>
         </li>
-        <li>
+        <!--<li>
             <div class="flex items-center gap-x-6">
               <img class="rounded-full" style="height:7rem;width: 7rem;" src="assets/images/soumyadeep.png" alt="">
               <div>
@@ -402,8 +417,8 @@
                   ></a></p>
               </div>
             </div>
-          </li>
-          <li>
+          </li>-->
+          <!--<li>
             <div class="flex items-center gap-x-6">
               <img class="rounded-full" style="height:7rem;width: 7rem;" src="assets/images/sourabh.jpg" alt="">
               <div>
@@ -414,14 +429,14 @@
                   ></a></p>
               </div>
             </div>
-          </li>
+          </li>-->
           <li>
             <div class="flex items-center gap-x-6">
               <img class="rounded-full" style="height:7rem;width: 7rem;" src="assets/images/samanway.jpg" alt="">
               <div>
                 <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Samanway</h3>
-                <p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
-                <p><a href="javascript:void(0)"
+                <p class="text-sm font-semibold leading-6 text-indigo-600">Team member</p>
+                <p><a href="https://www.linkedin.com/in/samanway-87924a224/"
                     ><i class="lni-linkedin-original"></i
                   ></a></p>
               </div>
