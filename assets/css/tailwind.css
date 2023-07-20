@@ -596,6 +596,12 @@ video {
   width: 100%;
 }
 
+.in_touch p{
+  height: 400px;
+  line-height: 41px;
+}
+
+
 @media (min-width: 640px){
   .container{
     max-width: 640px;
@@ -931,7 +937,7 @@ video {
 }
 @media (max-width: 1024px){
   .ml-new{
-    margin-left: -10vw;
+    margin-left: -7vw;
   }
   .cards{
     display: flex;
@@ -948,7 +954,12 @@ video {
   .team{
     padding: 0rem 1.5rem;
   }
-}
+
+  .mail{
+    font-size: large;
+  }
+  }
+
 
 @media (min-width: 1024px){
 .team{
@@ -1411,6 +1422,17 @@ p {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.box1{
+  position: relative;
+  left: -69px;
+}
+
+@media (max-width: 1024px){
+  .box1{
+    left: 0px;
+  }
 }
 
 .header-hero::before {

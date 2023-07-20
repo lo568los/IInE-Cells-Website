@@ -424,3 +424,98 @@
     </div>
     <!-- container -->
   </section>
+
+  <div class="justify-center row">
+    <div class="w-full lg:w-2/3">
+      <div class="contact-form">
+        <form
+          id="contact-form"
+          action="assets/contact.php"
+          method="post"
+          data-toggle="validator"
+        >
+          <div class="row">
+            <div class="w-full md:w-1/2">
+              <div class="mx-4 mb-6 single-form form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  data-error="Name is required."
+                  required="required"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- single form -->
+            </div>
+            <div class="w-full md:w-1/2">
+              <div class="mx-4 mb-6 single-form form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  data-error="Valid email is required."
+                  required="required"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- single form -->
+            </div>
+            <div class="w-full md:w-1/2">
+              <div class="mx-4 mb-6 single-form form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  data-error="Subject is required."
+                  required="required"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- single form -->
+            </div>
+            <div class="w-full md:w-1/2">
+              <div class="mx-4 mb-6 single-form form-group">
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone"
+                  data-error="Phone is required."
+                  required="required"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- single form -->
+            </div>
+            <div class="w-full">
+              <div class="mx-4 mb-6 single-form form-group">
+                <textarea
+                  rows="5"
+                  placeholder="Your Mesaage"
+                  name="message"
+                  data-error="Please, leave us a message."
+                  required="required"
+                ></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- single form -->
+            </div>
+            <p class="mx-4 form-message"></p>
+            <div class="w-full">
+              <div class="mx-4 mt-2 text-center single-form form-group">
+                <button
+                  type="submit"
+                  class="main-btn gradient-btn focus:outline-none"
+                >
+                  Send message
+                </button>
+              </div>
+              <!-- single form -->
+            </div>
+          </div>
+          <!-- row -->
+        </form>
+      </div>
+      <!-- row -->
+    </div>
+  </div>
